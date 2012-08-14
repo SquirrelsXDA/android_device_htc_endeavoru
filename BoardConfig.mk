@@ -79,9 +79,12 @@ NEED_WORKAROUND_CORTEX_A9_745320 := true
 BOARD_VOLD_MAX_PARTITIONS := 20
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/fsl-tegra-udc/gadget/lun0/file
+BOARD_UMS_LUNFILE=/sys/devices/platform/fsl-tegra-udc/gadget/lun0/file
+BOARD_HAS_NO_SELECT_BUTTON=true
 
 # Kernel / Ramdisk
 TARGET_PREBUILT_KERNEL := device/htc/endeavoru/prebuilt/kernel
+TARGET_KERNEL_CONFIG=cyanogenmod_endeavoru_defconfig
 TARGET_PROVIDES_INIT_TARGET_RC := true
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 8388608
